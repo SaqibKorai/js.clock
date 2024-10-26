@@ -4,16 +4,6 @@ function updateClock() {
     var theMin = now.getMinutes();
     var theSec = now.getSeconds();
 
-    if (theHr < 10) {
-        theHr = "0" + theHr;
-    }
-    if (theMin < 10) {
-        theMin = "0" + theMin;
-    }
-    if (theSec < 10) {
-        theSec = "0" + theSec;
-    }
-
     var timeString = theHr + ":" + theMin + ":" + theSec;
 
     document.getElementById('clock').innerText = timeString;
